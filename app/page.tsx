@@ -285,9 +285,12 @@ export default function WeatherPage() {
         style={{ background: "var(--background)", borderBottom: "1px solid var(--border)" }}
       >
         <span className="font-bold font-mono text-sm" style={{ color: "var(--accent)" }}>{"</>"}</span>
-        <a href="https://freed-projects.vercel.app" className="text-xs transition-opacity hover:opacity-70" style={{ color: "var(--text-muted)" }}>
-          ← Portfolio
-        </a>
+        <div className="flex items-center gap-4">
+          <span className="text-xs hidden sm:inline" style={{ color: "var(--border)" }}>weather-freed.vercel.app</span>
+          <a href="https://freed-projects.vercel.app" className="text-xs transition-opacity hover:opacity-70" style={{ color: "var(--text-muted)" }}>
+            ← Portfolio
+          </a>
+        </div>
       </nav>
 
       <div className="max-w-2xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-6">
